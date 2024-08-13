@@ -1,0 +1,417 @@
+.button_main {
+  align-items: center;
+  background-image: linear-gradient(rgb(150, 150, 224), #695dac);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 19px 24px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.button_main:active,
+.button_main:hover {
+  outline: 0;
+  background-image: linear-gradient(#4a4aab, #261c45);
+}
+
+@media (min-width: 768px) {
+  .button_main {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+.center-div {
+  width: 100%;
+  top: 25%;
+  border-radius: 30px;
+  padding: 15px;
+  background: linear-gradient(#eaf8f9, #7da3c9);
+  animation: zoomOut 1s ease forwards;  
+  transform-origin: center center;
+  box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.5);  
+}
+
+@keyframes zoomOut {
+  from {
+    transform: scale(1);  
+  }
+  to {
+    transform: scale(0.8);  
+  }
+}
+
+.container1 {
+  padding-top: 80px;
+  margin: 250px;
+  background-color: #dff4f4;
+}
+
+.disease-info {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  margin-top: 10px; 
+  background-color: #f0f0f0; 
+  padding: 10px; 
+  border-radius: 5px; 
+}
+
+.disease:hover .disease-info {
+  display: block;
+  opacity: 1;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: black;
+}
+
+.parent-div {
+  display: flex;  
+}
+
+.child-div {
+  flex: 1;
+  border-radius: 20px;
+  padding: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 50px;
+}
+
+.child-div:first-child {
+  margin-right: 20px;
+  padding: 0px;
+}
+
+.child-div img {
+  max-width: 100%;
+  border-radius: 20px;  
+}
+
+.items ul {
+  font-size: 20px;
+  background-color: #dff4f4;
+  padding: 10px;
+}
+
+.container2 {
+  background-image: linear-gradient(to bottom right, #eaf8f9, #9fc5ec);
+  padding-top: 50px;
+  margin: 100px;
+  margin-left: 200px;
+}
+
+.container4 {
+  background-image: linear-gradient(to bottom right,#eaf8f9, #9fc5ec);
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(21, 20, 43, 0.3);
+  margin: 100px;
+  margin-left: 200px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 100px;
+}
+
+.container3 {
+  background-image: linear-gradient(to bottom right,#c9daec, #a5bfda);
+  padding-top: 50px;
+  margin: 100px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(21, 20, 43, 0.3);
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-container h1,
+.title-container h5 {
+  margin: 0;
+}
+
+.navbar-toggler {
+  border: none;
+  background: transparent;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.navbar-nav {
+  text-align: right;
+}
+ 
+.compressed .title-container {
+  font-size: 16px;  
+}
+
+.compressed .navbar-toggler-icon {
+  display: none;  
+}
+
+.compressed .navbar-brand-text {
+  display: inline-block;  
+}
+ 
+.navbar.compressed {
+  height: 60px;  
+  background-color: #fff;  
+  transition: height 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+ 
+.navbar.compressed .container > *:not(.title-container) {
+  display: none;
+}
+ 
+.navbar.compressed .title-container {
+  display: block;
+}
+
+.button-31 {
+  background-color: #222;
+  border-radius: 4px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Farfetch Basis", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  max-width: none;
+  min-height: 44px;
+  min-width: 10px;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 20px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.instruction {
+  font-family: "Arial", sans-serif;  
+  font-size: 35px;  
+  color: #293744;  
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;  
+}
+
+.instruction span {
+  display: block; 
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;  
+  margin-top: 10px;  
+}
+
+.button-31:hover,
+.button-31:focus {
+  opacity: 0.75;
+}
+
+.parent-div-disease {
+  width: 80%;
+  margin: 0 auto;  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.parent-div-disease .child-div-disease {
+  flex-basis: calc(
+    50% - 20px
+  );  
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+  background: linear-gradient(#eaf8f9, #c9daec);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;  
+}
+
+.parent-div-disease .child-div-disease:hover {
+  transform: scale(1.1);
+}
+
+.parent-div-disease .child-div-disease h3 {
+  margin-top: 0;
+}
+
+.parent-div-disease .child-div-disease img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.parent-div-disease .child-div-disease p {
+  margin: 10px 0;
+}
+
+.parent-div-disease .child-div-disease .know-more-button {
+  background-image: linear-gradient(#8983cd, #383740);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.parent-div-disease .child-div-disease .know-more-button:hover {
+  background-color: #4945a0;
+}
+
+.child-div-d {
+  display: flex;
+  align-items: center;
+}
+
+.image-container {
+  flex: 0 0 auto;  
+}
+
+.image-container img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.info {
+  flex: 1;  
+  padding-left: 20px; 
+}
+
+.info p {
+  margin: 0;
+}
+
+.info .know-more-button {
+  background-color: #4c6aaf;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.info .know-more-button:hover {
+  background-color: #4c4279;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.parent-div-services {
+  background: linear-gradient(#c9daec, #a5bfda);
+  width: 80%;
+  margin: 80px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: background-color 0.3s ease;
+}
+
+.parent-div-services:hover {
+  transform: scale(1.05);
+}
+
+.child-div-content {
+  flex: 1;
+  margin: 25px;
+  margin-left: 40px;
+}
+
+.child-div-img img {
+  margin: 40px;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Text styling */
+.child-div-content h3 {
+  color: #333;
+}
+
+.child-div-content ul {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 18px;
+  list-style-type: disc;
+  padding: 0;
+  margin-left: 50px;
+  color: #1d1c1f;
+}
+
+.child-div-content ul li {
+  margin-bottom: 5px;
+}
+
+.btn {
+  background: linear-gradient(#565662, #232039);
+  color: whitesmoke;
+  margin-right: 140px;
+}

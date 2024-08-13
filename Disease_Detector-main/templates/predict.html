@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prediction Result</title>
+    <link rel="icon" type="image/x-icon" href="../static/logo.png">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link href="../static/index.css" rel="stylesheet" />
+  </head>
+  <body
+    style="
+      background: radial-gradient(circle, #ffffff, #cad4de);
+      font-family: 'Times New Roman', Times, serif;
+      padding-top: 200px;
+    "
+  >
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top"
+      style="background: linear-gradient(to bottom right, rgb(252, 252, 252), #7da3c9)"
+      id="navbar-section"
+    >
+      <div class="container">
+        <!-- Logo on the left -->
+        <img
+          src="../static/logo.png"
+          alt="Your Image"
+          height="120px"
+          style="border-radius: 120px; margin: 20px"
+        />
+
+        <!-- Acoustic Scope title and one-liner -->
+        <div class="title-container">
+          <h1
+            style="
+              font-family: monospace;
+              font-weight: bold;
+              font-variant: unset;
+              color: #032e55;
+            "
+          >
+            AcousticScope
+          </h1>
+          <h4>Unlock the secrets of your health through sound.</h4>
+        </div>
+
+        <!-- Navbar toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarResponsive"
+        >
+          <a class="btn" href="{{ url_for('index') }}"
+            >Go back to home page &#8594;</a>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="container2"
+      style="
+        width: 50%;
+        padding: 20px;
+        margin: 0 auto;
+        margin-top: 120px;
+        border-radius: 50px;
+        box-shadow: rgba(79, 79, 88, 0.2) 0 15px 30px -5px;
+      "
+    >
+      <h1 class="text-center">Prediction Result</h1>
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+          <div class="card" style="background-color: #dedde5">
+            <div class="card-body">
+              <!-- Display the prediction result here -->
+              <h3 class="card-title">Predicted Disease</h3>
+              <h4 class="card-text">{{ prediction }}</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container3"
+      style="
+        background-color: #f0f0f0;
+        padding: 20px;
+        justify-content: center;
+        text-align: center;
+      "
+    >
+      <div
+        class="card-body"
+        style="
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <h3 class="card-title" style="font-size: 30px; font-weight: 400">
+          Consult your doctor
+        </h3>
+        <p
+          class="card-text"
+          style="
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+              serif;
+            font-size: 23px;
+          "
+        >
+          Make sure to consult your healthcare provider for proper diagnosis and
+          treatment.
+        </p>
+        <h3 class="card-title mt-4" style="font-size: 30px; font-weight: 400">
+          Exercises for a Healthy Respiratory Tract
+        </h3>
+        <div
+          style="
+            width: 25%;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+          "
+        >
+          <ul class="card-text" style="font-size: 23px">
+            <li>Breathing exercises</li>
+            <li>Regular physical activity</li>
+            <li>Avoiding exposure to pollutants</li>
+            <li>Maintaining a healthy diet</li>
+          </ul>
+        </div>
+
+        <div class="row mt-4" style="width: 100%">
+          <div class="col-md-3">
+            <img
+              src="../static/exercise1.png"
+              alt="Image 1"
+              height="250px"
+              style="width: 100%; object-fit: cover"
+            />
+          </div>
+          <div class="col-md-3">
+            <img
+              src="../static/exercise2.png"
+              alt="Image 2"
+              height="250px"
+              style="width: 100%; object-fit: cover"
+            />
+          </div>
+          <div class="col-md-3">
+            <img
+              src="../static/excercise5.png"
+              alt="Image 3"
+              height="250px"
+              style="width: 100%; object-fit: cover"
+            />
+          </div>
+          <div class="col-md-3">
+            <img
+              src="../static/exercise4.png"
+              alt="Image 4"
+              height="250px"
+              style="width: 100%; object-fit: cover"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      style="
+        background-color: #222222;
+        padding: 5px;
+        text-align: center;
+        color: hsl(0, 0%, 95%);
+      "
+      id="section-contributors"
+    >
+      <h5>Shri Ramdeobaba College of Engineering and Management, Nagpur</h5>
+
+      <h6>Guided by : Dr. Swati Hira</h6>
+
+      <h6>Contributors:</h6>
+      <h6 style="color: #f1f1f1">
+        Aastha Singh, Girija Chachada, Pranav Darak, Dhanashree Dharpure
+      </h6>
+      <hr style="margin-top: 10px; margin-bottom: 10px" />
+      <p style="color: #f1f1f1">&copy; Copyright 2024. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+      function handleScroll() {
+        var navbar = document.getElementById("navbar-section");
+        var titleContainer = document.querySelector(".title-container");
+        var h4Element = titleContainer.querySelector("h4");
+
+        if (window.scrollY > 0) {
+          navbar.classList.add("compressed");
+          h4Element.style.display = "none";
+        } else {
+          navbar.classList.remove("compressed");
+          h4Element.style.display = "block";
+        }
+      }
+
+      window.addEventListener("scroll", handleScroll);
+    </script>
+  </body>
+</html>
